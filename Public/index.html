@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="u<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Obirempon AI</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+  <div class="brand">OBIREMPON <span>AI</span></div>
+  <button class="premium" onclick="showPremium()">Premium • GH₵30/month</button>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="eyebrow">YOUR AI • YOUR BRAND</p>
+    <h1>Create. Ask. <span>Grow.</span></h1>
+    <p>One AI workspace for chatting, writing, design ideas and business growth.</p>
+  </section>
+
+  <section class="tools" id="tools">
+    <button class="tool active" data-tool="AI Chat">🤖 <b>AI Chat</b><small>Ask anything</small></button>
+    <button class="tool" data-tool="Writer">✍️ <b>Writer</b><small>Captions & lyrics</small></button>
+    <button class="tool" data-tool="Design Assistant">🎨 <b>Design</b><small>Flyers & branding</small></button>
+    <button class="tool" data-tool="Business Assistant">💡 <b>Business</b><small>Ideas & marketing</small></button>
+  </section>
+
+  <section class="chat">
+    <div class="chat-head">
+      <div><b id="toolName">🤖 AI Chat</b><small id="usage">Free: 10 requests/day</small></div>
+      <span class="online">● Online</span>
+    </div>
+
+    <div id="messages" class="messages">
+      <div class="bubble ai">Welcome to <b>Obirempon AI</b> 👋<br>What would you like to create today?</div>
+    </div>
+
+    <form id="form">
+      <textarea id="message" rows="2" placeholder="Ask Obirempon AI..."></textarea>
+      <button class="send">Send ➤</button>
+    </form>
+  </section>
+
+  <section class="premium-card">
+    <div>
+      <p class="eyebrow">PREMIUM</p>
+      <h2>More power for creators.</h2>
+      <p>Higher limits and advanced tools can be enabled when your paid plan is connected.</p>
+    </div>
+
+    <div class="price">GH₵30<span>/month</span></div>
+
+    <button class="premium" onclick="showPremium()">View Premium</button>
+  </section>
+</main>
+
+<div id="modal" class="modal hidden">
+  <div class="modal-box">
+    <button class="close" onclick="closePremium()">×</button>
+    <h2>Obirempon AI Premium</h2>
+    <div class="big-price">GH₵30 <small>/ month</small></div>
+    <p>Premium features are being prepared. Payment credentials should only be connected through a secure merchant account; never place private payment details in this website code.</p>
+    <button class="premium" onclick="closePremium()">Continue building</button>
+  </div>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>￼Enter
